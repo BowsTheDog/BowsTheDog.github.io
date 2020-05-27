@@ -48,6 +48,8 @@
 /* End new code */
 
   </style>
+  <script>
+  </script>
 <title>Our Pets</title> <!--Kat: changed title name to reflect the content-->
 </head>
   <!-- PAGE CONTENT STARTS HERE -->
@@ -147,9 +149,9 @@
 <!--visual line break-->
 <hr>
 
-<h2>More photos of us</h2>
+<button onclick="document.getElementById('hiddencarousel').style.visibility = 'visible'">More photos of us</button>
 <!-- Carousel part-->
-<div class="container mt-3">
+<div class="container mt-3" id="hiddencarousel" style="visibility: hidden;">
 <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
