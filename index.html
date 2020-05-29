@@ -48,6 +48,8 @@
 /* End new code */
 
   </style>
+  <script>
+  </script>
 <title>Our Pets</title> <!--Kat: changed title name to reflect the content-->
 </head>
   <!-- PAGE CONTENT STARTS HERE -->
@@ -74,7 +76,7 @@
   </nav>
   <br>
 <!--Kat: chaning color of h1 to match new color scheme-->
-  <h1><span style="color: #1C110A">Our Pets!</span>
+  <h1><span style="color: #1C110A">Our Petz!</span>
   </h1>
 
 <!-- Kat created a id specifically for the grid portion so it won't go to the edge of the screen. Feel free to mess around with it.-->
@@ -147,9 +149,10 @@
 <!--visual line break-->
 <hr>
 
-<h2>More photos of us</h2>
+<!--put "document.getElementById('hiddencarousel').style.visibility = 'visible'" into a funtion, and call the function instead, this will allow us to inplement a loop as well-->
+<button onclick="document.getElementById('hiddencarousel').style.visibility = 'visible'">More photos of us</button>
 <!-- Carousel part-->
-<div class="container mt-3">
+<div class="container mt-3" id="hiddencarousel" style="visibility: hidden;">
 <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
