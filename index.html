@@ -112,9 +112,10 @@
        
       </div>
     </div>
+    <!-- Gabe: Set for loop to make the background have a drop shadow, and have the titles of the pets to use the pets[] array-->
     <!--Second row (Bella + Soba)-->
     <div class="row">
-      <div class="col" style="background-color:#50A2A7;">
+      <div onmouseover="tempShadow()" class="col" style="background-color:#50A2A7;">
         <div>
           <h2 id="bellaTitle">Bella</h2>
         </div>
@@ -149,8 +150,8 @@
 <!--visual line break-->
 <hr>
 
-<!--put "document.getElementById('hiddencarousel').style.visibility = 'visible'" into a funtion, and call the function instead, this will allow us to inplement a loop as well-->
-<button onclick="document.getElementById('hiddencarousel').style.visibility = 'visible'">More photos of us</button>
+
+<button onclick="carouselTimer()">More photos of us</button>
 <!-- Carousel part-->
 <div class="container mt-3" id="hiddencarousel" style="visibility: hidden;">
 <div id="demo" class="carousel slide" data-ride="carousel">
