@@ -27,9 +27,9 @@
       font-style: italic;
     }
     .navbar
-        {
-            box-shadow: 0px 6px rgb(255, 255, 255);
-        }
+    {
+         box-shadow: 0px 6px rgb(255, 255, 255);
+    }
 
 /* Begin new code: Added these classes to play around with flexboxes to sit within your grid columns so that the text stacks with the images when the browser window becomes small. */
     .flexy-container {
@@ -92,7 +92,7 @@
           <div class="flexy"><img class="img-circle" src="media/lily.jpg" alt=" Lily"></div>
           <div class="flexy">
             <h2>Lily</h2>
-              <p>Lily is a <span style="color:rgb(148, 108, 160)">seven old</span> <strong>boxer</strong> who really <em>loves</em> squeaky toys :)</p>
+            <p>Lily is a <span style="color:rgb(148, 108, 160)">seven old</span> <strong>boxer</strong> who really <em>loves</em> squeaky toys :)</p>
           </div>
         </div>
       </div>
@@ -112,39 +112,48 @@
        
       </div>
     </div>
+
     <!-- Gabe: Set for loop to make the background have a drop shadow, and have the titles of the pets to use the pets[] array-->
     <!--Second row (Bella + Soba)-->
     <div class="row">
-      <div onmouseover="tempShadow()" class="col" style="background-color:#50A2A7;">
-        <div>
-          <h2 id="bellaTitle">Bella</h2>
+      <div class="col-6" style="background-color: #50A2A7;;">
+        
+        <div class="flexy-container" style="flex-direction: row-reverse;">
+          <div class="flexy"><img class="img-circle" src="media/bella.jpg" alt=" Bella"></div>
+          <div class="flexy">
+            <h2>Bella</h2>
+            <p>
+              <span style="color:grey">Bella</span>
+              runs around all day and brings
+              <span style="color:rgb(84, 54, 54)">mud</span>
+              back into the house, but she is too
+              <span style="color:pink">cute</span>
+              to get angry at.
+              Even at <strong>9 years</strong>
+              of age, she's just as <em>energenic</em>
+              as a
+              <span style="color:rgb(126, 128, 0)">puppy</span>!
+            </p>
+          </div>
         </div>
-        <p>
-          <span style="color:grey">Bella</span>
-          runs around all day and brings
-          <span style="color:rgb(84, 54, 54)">mud</span>
-          back into the house, but she is too
-          <span style="color:pink">cute</span>
-          to get angry at.
-          Even at <strong>9 years</strong>
-          of age, she's just as <em>energenic</em>
-          as a
-          <span style="color:rgb(126, 128, 0)">puppy</span>!
-        </p>
       </div>
-      <div class="col" style="background-color:#50A2A7;">
-        <img class="img-circle" src="media/bella.jpg" alt="Bella" width="300"></div>
-      <div class="col" style="background-color:#1C110A;">
-          <img class="img-circle" src="media/soba_2.jpg" alt="Soba" width="300">
+
+      <div class="col-6" style="background-color:#1C110A;"> 
+        <div class="flexy-container">          
+          <div class="flexy"><img class="img-circle" src="media/soba_2.jpg" alt="Soba"></div>
+          <div class="flexy">
+            <h2>Soba</h2>
+            <p>Soba is a <span style="color:#E9B44C">three year old</span> <strong>domestic long-hair</strong> cat who loves <em>eating plants</em> and <em>chasing laser pointers</em>. She was rescued from <strong>Seattle Humane</strong> in February 2020 and is so happy to finally have a home.</p>
+          </div>
         </div>
-      <div class="col" style="background-color:#1C110A;">
-          <h2 id="sobablock">Soba</h2>
-  
-          <p>Soba is a <span style="color:#E9B44C">three year old</span> <strong>domestic long-hair</strong> cat who loves <em>eating plants</em> and <em>chasing laser pointers</em>. She was rescued from <strong>Seattle Humane</strong> in February 2020 and is so happy to finally have a home.</p>
-        </div>
+      </div>
+
+
+      <div class="col" style="background-color: #9B2915;">
+       
+      </div>
     </div>
-  </div>
-</div>
+
 <br>
 
 <!--visual line break-->
