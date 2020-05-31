@@ -4,7 +4,7 @@
 
 <h1>Welcome</h1>
 
-<p>Weyni's GitHub</p>
+<p>Taylor's GitHub</p>
 
 </body>
 </html>
