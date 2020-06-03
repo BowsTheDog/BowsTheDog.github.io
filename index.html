@@ -1,6 +1,5 @@
 <html>
   <head>
-    <script>document.getElementById("test").innerHTML = "Hello!!!!!";</script>
     <script src="javaScriptCode.js"></script>
     <!-- Kat: Chose to include the Bootstrap 4 here -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -80,7 +79,7 @@
     </h1>
 
     <!-- Kat created a id specifically for the grid portion so it won't go to the edge of the screen. Feel free to mess around with it.-->
-    <div id="gridmargins">
+    <div id="gridmargins" onload="getPetName()">
     <!--Gabe: Setting up basic grid code-->
       <div class="container-fluid">
         
@@ -91,7 +90,7 @@
             <div class="flexy-container" style="flex-direction: row-reverse;">
               <div class="flexy"><img class="img-circle" src="media/lily.jpg" alt=" Lily"></div>
               <div class="flexy">
-                <h2>Lily</h2>
+                <h2 id="petName2"></h2>
                 <p>Lily is a <span style="color:rgb(148, 108, 160)">seven old</span> <strong>boxer</strong> who really <em>loves</em> squeaky toys :)</p>
               </div>
             </div>
@@ -101,7 +100,7 @@
             <div class="flexy-container">          
               <div class="flexy"><img class="img-circle" src="media/bigbuck.jpg" alt="Buck"></div>
               <div class="flexy">
-                <h2>Buck</h2>
+                <h2 id="petName1"></h2>
                 <p>Buck is a <span style="color:#000000">two year old</span> <strong>Border Collie</strong> who enjoys <em>chasing</em> anything that moves.</p>
               </div>
             </div>
@@ -121,7 +120,7 @@
           <div class="flexy-container" style="flex-direction: row-reverse;">
             <div class="flexy"><img class="img-circle" src="media/bella.jpg" alt=" Bella"></div>
             <div class="flexy">
-              <h2>Bella</h2>
+              <h2 id="petName0"></h2>
               <p>
                 <span style="color:grey">Bella</span>
                 runs around all day and brings
@@ -142,7 +141,7 @@
           <div class="flexy-container">          
             <div class="flexy"><img class="img-circle" src="media/soba_2.jpg" alt="Soba"></div>
             <div class="flexy">
-              <h2><span style="color:whitesmoke;">Soba</span></h2>
+              <h2 id="petName3"><!--<span style="color:whitesmoke;"></span>--></h2>
               <p>Soba is a <span style="color:#E9B44C">three year old</span> <strong>domestic long-hair</strong> cat who loves <em>eating plants</em> and <em>chasing laser pointers</em>. She was rescued from <strong>Seattle Humane</strong> in February 2020 and is so happy to finally have a home.</p>
             </div>
           </div>
@@ -158,8 +157,9 @@
     <!--visual line break-->
     <hr>
 
+    
 
-    <button onclick="carouselTimer()">More photos of us</button>
+    <button id="carButton" onmouseover="carouselTimer(true)" onmouseout="carouselTimer(false)">More photos of us</button>
     <!-- Carousel part-->
     <div class="container mt-3" id="hiddencarousel" style="visibility: hidden;">
       <div id="demo" class="carousel slide" data-ride="carousel">
